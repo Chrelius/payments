@@ -1,0 +1,51 @@
+{
+  "paymentMethods": [
+    {
+      "id": "1",
+      "label": "Maribank(Seabank) Bank Transfer",
+      "accountName": "Charles Becilla",
+      "accountNumber": "18634465084",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "label": "CIMB Bank Transfer",
+      "accountName": "Charles Becilla",
+      "accountNumber": "20860708928141",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "label": "Gcash",
+      "accountName": "Charles Becilla",
+      "accountNumber": "09178290754",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "4",
+      "label": "Maya Bank",
+      "accountName": "Charles Becilla",
+      "accountNumber": "808417074537",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "label": "BDO1",
+      "accountName": "Charles Becilla",
+      "accountNumber": "003820099152",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "6",
+      "label": "BPI",
+      "accountName": "Charles Becilla",
+      "accountNumber": "0576795176",
+      "qrImage": "",
+      "status": "available"
+    }
+}
