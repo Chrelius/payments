@@ -1,0 +1,28 @@
+{
+  "paymentMethods": [
+    {
+      "id": "1",
+      "label": "Bank Transfer",
+      "accountName": "John Doe",
+      "accountNumber": "1234567890",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "label": "PayPal",
+      "accountName": "john.doe@email.com",
+      "accountNumber": "john.doe@email.com",
+      "qrImage": "",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "label": "Venmo",
+      "accountName": "@johndoe",
+      "accountNumber": "@johndoe",
+      "qrImage": "",
+      "status": "hidden"
+    }
+  ]
+}
