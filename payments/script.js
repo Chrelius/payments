@@ -149,12 +149,17 @@ function fallbackCopy(text) {
   textArea.style.left = '-999999px';
   document.body.appendChild(textArea);
   textArea.select();
+  let success = false;
   try {
-    document.execCommand('copy');
+    success = document.execCommand('copy');
   } catch (err) {
     console.error('Fallback copy failed:', err);
   }
   document.body.removeChild(textArea);
+  if (!success) {
+    showToast('Failed to copy to clipboard', 'error');
+  }
+  return success;
 }
 
 // Show toast notification

@@ -314,10 +314,18 @@ function importConfig(e) {
         throw new Error('Invalid config structure');
       }
       
-      // Validate each method has required fields
+      // Validate each method has required fields and valid status
+      const validStatuses = ['available', 'not-available', 'hidden'];
       for (const method of importedConfig.paymentMethods) {
         if (!method.id || !method.label || !method.accountName || !method.accountNumber) {
           throw new Error('Invalid payment method structure');
+        }
+        if (method.status && !validStatuses.includes(method.status)) {
+          throw new Error('Invalid status value: ' + method.status);
+        }
+        // Default to 'available' if status is missing
+        if (!method.status) {
+          method.status = 'available';
         }
       }
       
@@ -347,7 +355,7 @@ function readFileAsDataURL(file) {
 
 // Generate unique ID
 function generateId() {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2);
+  return Date.now().toString(36) + Math.random().toString(36).substring(2);
 }
 
 // Show toast notification
